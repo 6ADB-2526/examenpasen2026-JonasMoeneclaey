@@ -1,3 +1,5 @@
+// aan deze code heb ik niets toegevoegd
+
 import { useRef } from "react";
 
 interface Props {
@@ -21,15 +23,15 @@ function RegistrationForm({ onRegister }: Props) {
 
   return (
     <>
-    <h1>Gebruikersregistratie:</h1>
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        ref={inputRef}
-        placeholder="Vul je gebruikersnaam in"
-      />
-      <button type="submit">Check / Registreer</button>
-    </form>
+      <h1>Gebruikersregistratie:</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          ref={inputRef}
+          placeholder="Vul je gebruikersnaam in"
+        />
+        <button type="submit">Check / Registreer</button>
+      </form>
     </>
   );
 }

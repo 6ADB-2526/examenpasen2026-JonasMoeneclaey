@@ -1,6 +1,6 @@
 import { useState } from "react";
 import RegistrationForm from "./components/RegistrationForm";
-import UserList from "./components/UserList";
+import UserList from "./components/UserList/UserList";
 
 export default function App() {
   const [GeregistreerdePersonen, setGeregistreerdePersonen] = useState([
@@ -15,11 +15,10 @@ export default function App() {
         onRegister={(naam: string) => {
           setGeregistreerdePersonen([...GeregistreerdePersonen, naam]);
           console.log(GeregistreerdePersonen);
-          
         }}
       />
       <hr />
-      <UserList users={GeregistreerdePersonen} />
+      { <UserList users={GeregistreerdePersonen} /> /* hier geef ik aan mijn prop users de gevraagde array mee*/}
     </div>
   );
 }
