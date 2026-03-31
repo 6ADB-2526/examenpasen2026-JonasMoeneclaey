@@ -20,6 +20,8 @@ function RegistrationForm({ onRegister }: Props) {
   };
 
   return (
+    <>
+    <h1>Gebruikersregistratie:</h1>
     <form onSubmit={handleSubmit}>
       <input
         type="text"
@@ -28,6 +30,7 @@ function RegistrationForm({ onRegister }: Props) {
       />
       <button type="submit">Check / Registreer</button>
     </form>
+    </>
   );
 }
 
